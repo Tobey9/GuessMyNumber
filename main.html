@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Guess My Number</title>
+  </head>
+  <body>
+    <div class="container-head">
+      <button class="again-btn js-again-btn">Again!</button>
+      <p>Guess the number between 0-5</p>
+    </div>
+    <h1>Guess My Number!</h1>
+    <input type="number" min="0" max="5" class="guess js-guess"></input>
+    <main class="container-body">
+      <div class="left">
+        <div class="box-check js-box-check"></div>
+        <button class="check-btn js-check-btn">Check!</button>
+      </div>
+      <div class="right">
+        <p class="js-message">Start Guessing...</p>
+        <p class="js-score">Score: </p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

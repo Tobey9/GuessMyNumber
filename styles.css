@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Arcade";
+  src: url("fonts/ARCADE_I.TTF") format("truetype");
+  src: url("fonts/ARCADE_N.TTF") format("truetype");
+  src: url("fonts/ARCADE_R.TTF") format("truetype");
+}
+
+body {
+  font-family: Arcade, sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+
+.container-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.again-btn {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-family: inherit;
+  align-self: flex-start;
+}
+
+h1 {
+  text-align: center;
+}
+
+.guess {
+  margin: 0 auto;
+  padding: 5px 10px;
+  height: 120px;
+  width: 150px;
+  display: block;
+  font-size: 2rem;
+  font-family: inherit;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.left {
+  margin-right: 1rem;
+}
+
+.right {
+  margin-left: 1rem;
+}
+
+.box-check {
+  width: 200px;
+  height: 110px;
+  border: 3px solid aliceblue;
+}
+
+.check-btn {
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 15px;
+  display: block;
+  margin: 15px auto 0 auto;
+}
+
+.result-box {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 559px) {
+  .container-head {
+    flex-direction: column;
+  }
+
+  .again-btn {
+    margin: 0 auto;
+  }
+
+  .container-head p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 443px) {
+  .container-head p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 431px) {
+  .container-body {
+    flex-direction: column;
+  }
+
+  .box-check {
+    margin: 0 auto;
+  }
+
+  .right p {
+    text-align: center;
+  }
+}
